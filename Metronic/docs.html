@@ -1,0 +1,3531 @@
+<!DOCTYPE html>
+<!--
+Author: Keenthemes
+Product Name: Metronic | Bootstrap HTML, VueJS, React, Angular, Asp.Net Core, Rails, Spring, Blazor, Django, Flask & Laravel Admin Dashboard Theme 
+Purchase: https://1.envato.market/EA4JP
+Website: http://www.keenthemes.com
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="en" data-theme-mode="light">
+	<!--begin::Head-->
+	
+<!-- Mirrored from keenthemes.com/metronic/docs by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 09:52:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<title>Metronic - the world's #1 selling Bootstrap Admin Theme Ecosystem for HTML, Vue, React, Angular & Laravel by Keenthemes</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Flask & Laravel versions. Grab your copy now and get life-time updates for free." />
+		<meta name="keywords" content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Flask & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Metronic | Bootstrap HTML, VueJS, React, Angular, Asp.Net Core, Rails, Spring, Blazor, Django, Flask & Laravel Admin Dashboard Theme" />
+		<meta property="og:url" content="https://keenthemes.com/metronic" />
+		<meta property="og:site_name" content="Keenthemes | Metronic" />
+		<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
+		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+		<!--begin::Fonts(mandatory for all pages)-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<!--end::Fonts-->
+		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Stylesheets Bundle-->
+		<!--Begin::Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-5FS8GGP');</script>
+		<!--End::Google Tag Manager -->
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_app_body" class="app-default">
+		<!--begin::Theme mode setup on page load-->
+		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-theme-mode")) { themeMode = document.documentElement.getAttribute("data-theme-mode"); } else { if ( localStorage.getItem("data-theme") !== null ) { themeMode = localStorage.getItem("data-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-theme", themeMode); }</script>
+		<!--end::Theme mode setup on page load-->
+		<!--Begin::Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FS8GGP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+		</noscript>
+		<!--End::Google Tag Manager (noscript) -->
+		<!--begin::App-->
+		<div class="d-flex flex-column flex-root app-root" id="kt_app_root">
+			<!--begin::Page-->
+			<div class="app-page flex-column flex-column-fluid" id="kt_app_page">
+				<!--begin::Header-->
+				<div id="kt_app_header" class="app-header" data-kt-sticky="true" data-kt-sticky-activate-="true" data-kt-sticky-name="app-header-sticky" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+					<!--begin::Header container-->
+					<div class="app-container container-xxl d-flex flex-stack" id="kt_app_header_container">
+						<!--begin::Brand-->
+						<div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0 me-lg-15">
+							<!--begin::Header menu mobile toggle-->
+							<button class="btn btn-icon btn-active-color-primary w-35px h-35px d-flex d-lg-none ms-n4 me-1" id="kt_app_header_menu_toggle">
+								<!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
+								<span class="svg-icon svg-icon-2">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="currentColor" />
+										<path opacity="0.3" d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z" fill="currentColor" />
+									</svg>
+								</span>
+								<!--end::Svg Icon-->
+							</button>
+							<!--end::Header menu mobile toggle-->
+							<!--begin::Logo-->
+							<a href="index.html">
+								<img alt="Logo" src="assets/media/logos/launcher.svg" class="h-20px h-lg-25px" />
+							</a>
+							<!--end::Logo-->
+						</div>
+						<!--end::Brand-->
+						<!--begin::Menu wrapper-->
+						<div class="d-flex align-items-stretch pe-12" id="kt_app_header_menu_wrapper">
+							<div class="app-header-menu app-header-mobile-drawer align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="app-header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="200px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_header_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="{default: 'append', lg: 'prepend'}" data-kt-swapper-parent="{default: '#kt_app_body', lg: '#kt_app_header_menu_wrapper'}">
+								<!--begin::Menu-->
+								<div class="menu menu-rounded menu-column menu-lg-row my-5 my-lg-0 align-items-stretch fw-semibold px-2 px-lg-0 fs-5" id="kt_app_header_menu" data-kt-menu="true">
+									<!--begin:Menu item-->
+									<div class="menu-item px-lg-1">
+										<!--begin:Menu link-->
+										<a class="menu-link px-3 px-lg-5" href="index.html">
+											<span class="menu-title">Metronic 8</span>
+										</a>
+										<!--end:Menu link-->
+									</div>
+									<!--end:Menu item-->
+									<!--begin:Menu item-->
+									<div class="menu-item px-lg-1">
+										<!--begin:Menu link-->
+										<a class="menu-link px-3 px-lg-5" href="https://keenthemes.com/metronic7/?page=index" target="_blank" title="Provide purchase code via &lt;strong&gt;devs.keenthemes.com&lt;/strong&gt; to download &lt;strong&gt;v7.2.9&lt;/strong&gt; zip" data-bs-toggle="tooltip" data-bs-html="true" data-bs-delay-show="1000" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="bottom">
+											<span class="menu-title">Metronic 7</span>
+										</a>
+										<!--end:Menu link-->
+									</div>
+									<!--end:Menu item-->
+									<!--begin:Menu item-->
+									<div class="menu-item px-lg-1">
+										<!--begin:Menu link-->
+										<a class="menu-link active px-3 px-lg-5" href="docs.html">
+											<span class="menu-title">All Docs</span>
+										</a>
+										<!--end:Menu link-->
+									</div>
+									<!--end:Menu item-->
+									<!--begin:Menu item-->
+									<div class="menu-item px-lg-1">
+										<!--begin:Menu link-->
+										<a class="menu-link px-3 px-lg-5" href="changelog.html">
+											<span class="menu-title">Changelog</span>
+										</a>
+										<!--end:Menu link-->
+									</div>
+									<!--end:Menu item-->
+									<!--begin:Menu item-->
+									<div class="menu-item px-lg-1">
+										<!--begin:Menu link-->
+										<a class="menu-link px-3 px-lg-5" href="https://devs.keenthemes.com/" target="_blank">
+											<span class="menu-title">Support</span>
+										</a>
+										<!--end:Menu link-->
+									</div>
+									<!--end:Menu item-->
+									<!--begin:Menu item-->
+									<div class="menu-item px-lg-1">
+										<!--begin:Menu link-->
+										<a class="menu-link px-3 px-lg-5" href="https://devs.keenthemes.com/metronic" target="_blank">
+											<span class="menu-title">Downloads</span>
+										</a>
+										<!--end:Menu link-->
+									</div>
+									<!--end:Menu item-->
+									<!--begin:Menu item-->
+									<div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2 px-lg-1">
+										<!--begin:Menu link-->
+										<span class="menu-link px-3 px-lg-5">
+											<span class="menu-title">More</span>
+											<span class="menu-arrow d-lg-none"></span>
+										</span>
+										<!--end:Menu link-->
+										<!--begin:Menu sub-->
+										<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown px-lg-2 py-lg-4 w-lg-200px">
+											<!--begin:Menu item-->
+											<div class="menu-item">
+												<!--begin:Menu link-->
+												<a class="menu-link" href="https://keenthemes.com/" target="_blank">
+													<span class="menu-title">KeenThemes</span>
+												</a>
+												<!--end:Menu link-->
+											</div>
+											<!--end:Menu item-->
+											<!--begin:Menu item-->
+											<div class="menu-item">
+												<!--begin:Menu link-->
+												<a class="menu-link" href="https://keenthemes.com/contact" target="_blank">
+													<span class="menu-title">Contact Us</span>
+												</a>
+												<!--end:Menu link-->
+											</div>
+											<!--end:Menu item-->
+											<!--begin:Menu item-->
+											<div class="menu-item">
+												<!--begin:Menu link-->
+												<a class="menu-link" href="https://keenthemes.com/hireus" target="_blank">
+													<span class="menu-title">Hire Experts</span>
+												</a>
+												<!--end:Menu link-->
+											</div>
+											<!--end:Menu item-->
+											<!--begin:Menu item-->
+											<div class="menu-item">
+												<!--begin:Menu link-->
+												<a class="menu-link" href="github.html" target="_blank" title="Access Metronic's private Github repository" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+													<span class="menu-title">Github Access</span>
+												</a>
+												<!--end:Menu link-->
+											</div>
+											<!--end:Menu item-->
+										</div>
+										<!--end:Menu sub-->
+									</div>
+									<!--end:Menu item-->
+								</div>
+								<!--end::Menu-->
+							</div>
+						</div>
+						<!--end::Menu wrapper-->
+						<!--begin::Navbar-->
+						<div class="app-navbar flex-shrink-0">
+							<!--begin::Quick links-->
+							<div class="app-navbar-item">
+								<a class="btn btn-success" href="https://1.envato.market/EA4JP" target="_blank">Buy 
+								<span class="d-none d-md-inline">Metronic</span></a>
+							</div>
+							<!--end::Quick links-->
+							<!--begin::Theme mode-->
+							<div class="app-navbar-item ms-md-1 me-n5 d-none"></div>
+							<!--end::Theme mode-->
+						</div>
+						<!--end::Navbar-->
+					</div>
+					<!--end::Header container-->
+				</div>
+				<!--end::Header-->
+				<!--begin::Wrapper-->
+				<div class="app-wrapper flex-column flex-row-fluid" id="kt_app_wrapper">
+					<!--begin::Hero-->
+					<div id="kt_app_hero" class="app-hero app-hero-default mb-5 mb-lg-15">
+						<!--begin::Hero container-->
+						<div id="kt_app_hero_container" class="app-container container-xxl">
+							<!--begin::Hero wrapper-->
+							<div class="app-hero-wrapper pt-10 pt-xl-20" data-theme="light">
+								<!--begin::Row-->
+								<div class="row pt-lg-10">
+									<!--begin::Col-->
+									<div class="col-lg-6 order-2 order-lg-1">
+										<!--begin::Preview-->
+										<div class="preview w-100 w-lg-500px w-xl-550px h-150px h-md-275px h-xl-300px">
+											<!--begin::Preview light-->
+											<div class="preview-light">
+												<img class="w-lg-500px w-xl-550px" src="assets/media/screen/light.png" alt="" />
+											</div>
+											<!--end::Preview light-->
+											<!--begin::Preview dark-->
+											<div class="preview-dark">
+												<img class="w-lg-500px w-xl-550px" src="assets/media/screen/dark.png" alt="" />
+											</div>
+											<!--end::Preview dark-->
+											<!--begin::Preview drag-->
+											<div class="preview-drag btn btn-icon rounded-circle bg-body w-40px h-40px">
+												<!--begin::Svg Icon | path: icons/duotune/arrows/arr074.svg-->
+												<span class="svg-icon svg-icon-2 me-n2">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M11.2657 11.4343L15.45 7.25C15.8642 6.83579 15.8642 6.16421 15.45 5.75C15.0358 5.33579 14.3642 5.33579 13.95 5.75L8.40712 11.2929C8.01659 11.6834 8.01659 12.3166 8.40712 12.7071L13.95 18.25C14.3642 18.6642 15.0358 18.6642 15.45 18.25C15.8642 17.8358 15.8642 17.1642 15.45 16.75L11.2657 12.5657C10.9533 12.2533 10.9533 11.7467 11.2657 11.4343Z" fill="currentColor" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+												<!--begin::Svg Icon | path: icons/duotune/arrows/arr071.svg-->
+												<span class="svg-icon svg-icon-2">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M12.6343 12.5657L8.45001 16.75C8.0358 17.1642 8.0358 17.8358 8.45001 18.25C8.86423 18.6642 9.5358 18.6642 9.95001 18.25L15.4929 12.7071C15.8834 12.3166 15.8834 11.6834 15.4929 11.2929L9.95001 5.75C9.5358 5.33579 8.86423 5.33579 8.45001 5.75C8.0358 6.16421 8.0358 6.83579 8.45001 7.25L12.6343 11.4343C12.9467 11.7467 12.9467 12.2533 12.6343 12.5657Z" fill="currentColor" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+											</div>
+											<!--end::Preview drag-->
+											<!--begin::Preview slider-->
+											<input class="preview-slider" type="range" min="1" max="100" value="50" />
+											<!--end::Preview slider-->
+										</div>
+										<!--end::Preview-->
+									</div>
+									<!--end::Col-->
+									<!--begin::Col-->
+									<div class="col-lg-6 order-1 order-lg-2 mb-10 mb-lg-0">
+										<!--begin::Block-->
+										<div class="ms-0 ms-lg-10 ms-xl-n10 ms-xl-0">
+											<!--begin::Heading-->
+											<h1 class="fs-1 fs-lg-2hx fw-bold text-gray-900 mb-5 letter-spacing mt-n1">Metronic Documentation</h1>
+											<!--end::Heading-->
+											<!--begin::Text-->
+											<div class="fs-6 fs-xl-4 fw-semibold text-gray-800 mb-5">A single core framework and long term tool built on top of Bootstrap 5
+											<br />for delivering boundless highly customized projects</div>
+											<!--end::Text-->
+											<div class="separator separator-hero my-8 w-100"></div>
+											<!--begin::Link-->
+											<div class="d-flex align-items-center flex-wrap gap-2 gap-lg-4">
+												<a href="https://devs.keenthemes.com/" target="_blank" class="btn btn-dark">Devs Forum</a>
+												<span class="fs-6 fw-semibold text-gray-800">Learn more about Metronic from 
+												<a href="https://keenthemes.com/tutorials/categories/metronic-admin" target="_blank" class="text-dark fw-bold">Video Tutorials</a></span>
+											</div>
+											<!--end::Link-->
+										</div>
+										<!--end::Block-->
+									</div>
+									<!--end::Col-->
+								</div>
+								<!--end::Row-->
+							</div>
+							<!--end::Hero wrapper-->
+						</div>
+						<!--end::Hero container-->
+					</div>
+					<!--end::Hero-->
+					<!--begin::Main-->
+					<div class="app-main flex-column flex-row-fluid" id="kt_app_main">
+						<!--begin::Content wrapper-->
+						<div class="d-flex flex-column flex-column-fluid">
+							<!--begin::Content-->
+							<div id="kt_app_content" class="app-content flex-column-fluid">
+								<!--begin::Content container-->
+								<div id="kt_app_content_container" class="app-container container-xxl">
+									<!--end::Docs-->
+									<div class="mb-10 mb-lg-15">
+										<!--begin::Row-->
+										<div class="row gx-5 gx-lg-10">
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/html/metronic/docs/" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/html.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">HTML</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/metronic8/vue/docs/#/doc-overview" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/vue.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">Vue</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/metronic8/react/docs/docs/quick-start" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/react.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">React</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/metronic8/angular/docs/quick-start" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/angular.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">Angular</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/metronic8/laravel/documentation/getting-started/overview?demo=demo1" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/laravel.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">Laravel</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/asp.net-core/metronic/docs/" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/asp.net-core.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">ASP.NET Core</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/django/metronic/docs/" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/django.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">Django</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/flask/metronic/docs/" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/flask.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">Flask</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/blazor/metronic/docs/" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/blazor.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">Blazor</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/rails/metronic/docs/" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/rails.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">Rails</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-lg-3">
+												<!--begin::Link-->
+												<a href="https://preview.keenthemes.com/spring/metronic/docs/" target="_blank" class="d-flex flex-center flex-column bg-light rounded-2 p-10 p-lg-15 hover-elevate-up overflow-hidden mb-5 mb-lg-10">
+													<img class="w-40px mb-5" src="assets/media/framework-logos/spring.png" alt="" />
+													<span class="text-gray-900 fw-bold fs-4">Spring</span>
+												</a>
+												<!--end::Link-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Row-->
+									</div>
+									<!--end::Docs-->
+									<style>.stats-value-bg { background-image: url(assets/media/misc/stats-value-shape-bg.svg); }</style>
+									<!--begin::Stats-->
+									<div id="kt_app_stats" class="bgi-no-repeat bgi-position-y-bottom bgi-position-x-top bgi-size-cover d-flex flex-center rounded-4 px-10 py-10 py-lg-10 mb-lg-10 mb-20" style="background-image: url(assets/media/misc/stats-visuals.png)">
+										<!--begin::Stats wrapper-->
+										<div class="d-flex flex-center flex-column py-10">
+											<!--begin::Heading-->
+											<div class="d-flex flex-column flex-center mb-10">
+												<!--begin::Title-->
+												<h1 class="text-white fs-2hx fw-bold letter-spacing">Trust Driven by</h1>
+												<!--end::Title-->
+												<!--begin::Subtitle-->
+												<h3 class="d-flex text-white fs-2hx fw-bolder mb-12">
+												<span class="ms-3 d-inline-flex position-relative">
+													<span class="px-1">10 Years</span>
+													<img class="w-100 position-absolute bottom-0 mb-n2" src="assets/media/misc/stats-title-underline.svg" alt="" />
+												</span>of Innovations</h3>
+												<!--end::Subtitle-->
+												<!--begin::Description-->
+												<div class="text-center fs-5 fw-semibold">
+												<span class="text-white">Enterprise grade</span>&nbsp; 
+												<span class="text-white opacity-75">and cut-price solution for web apps of</span>&nbsp; 
+												<span class="text-white opacity-75">any size</span>&nbsp; 
+												<br />
+												<span class="text-white opacity-75">coupled with</span>
+												<span class="text-white">the de-facto frameworks</span>
+												<span class="text-white opacity-75">and familiar tools</span></div>
+												<!--end::Description-->
+											</div>
+											<!--end::Heading-->
+											<!--begin::Numbers-->
+											<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between mx-auto mb-10">
+												<div class="stats-value-bg d-flex flex-column flex-center h-175px w-175px h-lg-200px w-lg-200px my-3 bgi-no-repeat bgi-position-center bgi-size-contain">
+													<div class="fw-bold fs-6 mb-0" style="color: #A2F4C7">Loved By</div>
+													<div class="fs-1 fw-bolder text-white text-center d-flex flex-center">
+														<div class="min-w-70px" data-kt-countup="true" data-kt-countup-value="100" data-kt-countup-suffix="k+">0</div>
+													</div>
+												</div>
+												<div class="stats-value-bg d-flex flex-column flex-center h-175px w-175px h-lg-200px w-lg-200px my-3 bgi-no-repeat bgi-position-center bgi-size-contain">
+													<div class="fw-bold fs-6 mb-0" style="color: #A2F4C7">Rated 5 Stars</div>
+													<div class="fs-1 fw-bolder text-white text-center d-flex flex-center">
+														<div class="min-w-70px" data-kt-countup="true" data-kt-countup-value="7500" data-kt-countup-separator="," data-kt-countup-suffix="+">0</div>
+													</div>
+												</div>
+												<div class="stats-value-bg d-flex flex-column flex-center h-175px w-175px h-lg-200px w-lg-200px my-3 bgi-no-repeat bgi-position-center bgi-size-contain">
+													<div class="fw-bold fs-6 mb-0" style="color: #A2F4C7">End Users</div>
+													<div class="fs-1 fw-bolder text-white text-center d-flex flex-center">
+														<div class="min-w-70px" data-kt-countup="true" data-kt-countup-value="100" data-kt-countup-suffix="M+">0</div>
+													</div>
+												</div>
+												<div class="stats-value-bg d-flex flex-column flex-center h-175px w-175px h-lg-200px w-lg-200px my-3 bgi-no-repeat bgi-position-center bgi-size-contain">
+													<div class="fw-bold fs-6 mb-0" style="color: #A2F4C7">On Theme Market</div>
+													<div class="fs-1 fw-bolder text-white text-center d-flex flex-center">
+														<div class="min-w-70px" data-kt-countup="true" data-kt-countup-value="10" data-kt-countup-suffix="&nbsp;Years">0</div>
+													</div>
+												</div>
+											</div>
+											<!--end::Numbers-->
+											<!--begin::Clients-->
+											<div class="d-flex align-items-center justify-content-center flex-wrap position-relative px-5">
+												<div class="d-flex flex-center m-3 m-md-7" data-bs-toggle="tooltip" title="Fujifilm">
+													<img src="assets/media/client-logos/fujifilm.svg" data-lazy-src-="" class="mh-20px mh-lg-40px" alt="" />
+												</div>
+												<div class="d-flex flex-center m-3 m-md-7" data-bs-toggle="tooltip" title="Vodafone">
+													<img src="assets/media/client-logos/vodafone.svg" data-lazy-src-="" class="mh-20px mh-lg-40px" alt="" />
+												</div>
+												<div class="d-flex flex-center m-3 m-md-7" data-bs-toggle="tooltip" title="KPMG International">
+													<img src="assets/media/client-logos/kpmg.svg" data-lazy-src-="" class="mh-20px mh-lg-40px" alt="" />
+												</div>
+												<div class="d-flex flex-center m-3 m-md-7" data-bs-toggle="tooltip" title="Nasa">
+													<img src="assets/media/client-logos/nasa.svg" data-lazy-src-="" class="mh-20px mh-lg-40px" alt="" />
+												</div>
+												<div class="d-flex flex-center m-3 m-md-7" data-bs-toggle="tooltip" title="Aspnetzero">
+													<img src="assets/media/client-logos/aspnetzero.svg" data-lazy-src-="" class="mh-20px mh-lg-40px" alt="" />
+												</div>
+												<div class="d-flex flex-center m-3 m-md-7" data-bs-toggle="tooltip" title="AON - Empower Results">
+													<img src="assets/media/client-logos/aon.svg" data-lazy-src-="" class="mh-20px mh-lg-40px" alt="" />
+												</div>
+												<div class="d-flex flex-center m-3 m-md-7" data-bs-toggle="tooltip" title="Hewlett-Packard">
+													<img src="assets/media/client-logos/hp.svg" data-lazy-src-="" class="mh-20px mh-lg-40px" alt="" />
+												</div>
+												<div class="d-flex flex-center m-3 m-md-7" data-bs-toggle="tooltip" title="Truman University">
+													<img src="assets/media/client-logos/truman.svg" data-lazy-src-="" class="mh-20px mh-lg-40px" alt="" />
+												</div>
+											</div>
+											<!--end::Clients-->
+											<div class="h-50px h-lg-300px"></div>
+										</div>
+										<!--end::Stats wrapper-->
+									</div>
+									<!--end::Stats-->
+									<!--begin::Frameworks-->
+									<div class="d-flex flex-column mb-lg-10 mb-20 pt-10" id="kt_app_frameworks">
+										<!--begin::Heading-->
+										<div class="d-flex flex-column flex-center mb-10 mb-lg-20">
+											<!--begin::Title-->
+											<h1 class="text-dark fs-2hx fw-semibold letter-spacing">9 Frameworks</h1>
+											<!--end::Title-->
+											<!--begin::Subtitle-->
+											<h3 class="d-flex text-dark fs-2hx fw-bolder mb-10 letter-spacing">
+											<span class="ms-3 d-inline-flex position-relative">
+												<span class="px-1">One Scalable</span>
+												<img class="w-100 position-absolute bottom-0 mb-n2" src="assets/media/misc/frameworks-title-underline.svg" alt="" />
+											</span>Foundation</h3>
+											<!--end::Subtitle-->
+											<!--begin::Description-->
+											<div class="text-gray-700 text-center fs-4 fw-semibold opacity-75">A single core framework and long term tool built on top of Bootstrap 5
+											<br />to ship limitless highly customized projects of any size</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Heading-->
+										<!--begin::Frameworks content-->
+										<div class="d-flex">
+											<!--begin::Sidebar-->
+											<div class="app-sidebar-nav d-none d-lg-flex flex-column flex-lg-row-auto w-100 w-lg-250px p-5 py-lg-0 ps-lg-0 pe-lg-12" data-kt-drawer="true" data-kt-drawer-name="app-frameworks-sidebar" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="225px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_app_frameworks_sidebar_toggle">
+												<!--begin::Sticky aside-->
+												<div class="mb-0">
+													<ul class="nav nav-tabs nav-pills flex-column border-0">
+														<li class="nav-item me-0">
+															<a class="nav-link active" data-bs-toggle="tab" href="#kt_app_framework_html">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/html.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/html.png" alt="" />
+															</span>HTML</a>
+														</li>
+														<li class="nav-item me-0">
+															<a class="nav-link" data-bs-toggle="tab" href="#kt_app_framework_vue">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/vue.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/vue.png" alt="" />
+															</span>Vue</a>
+														</li>
+														<li class="nav-item me-0">
+															<a class="nav-link" data-bs-toggle="tab" href="#kt_app_framework_react">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/react.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/react.png" alt="" />
+															</span>React</a>
+														</li>
+														<li class="nav-item me-0">
+															<a class="nav-link" data-bs-toggle="tab" href="#kt_app_framework_angular">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/angular.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/angular.png" alt="" />
+															</span>Angular</a>
+														</li>
+														<li class="nav-item me-0">
+															<a class="nav-link" data-bs-toggle="tab" href="#kt_app_framework_laravel">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/laravel.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/laravel.png" alt="" />
+															</span>Laravel</a>
+														</li>
+														<li class="nav-item me-0">
+															<a class="nav-link" data-bs-toggle="tab" href="#kt_app_framework_aspnet-core">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/asp.net-core.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/asp.net-core.png" alt="" />
+															</span>ASP.NET Core</a>
+														</li>
+														<li class="nav-item me-0">
+															<a class="nav-link" data-bs-toggle="tab" href="#kt_app_framework_django">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/django.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/django.png" alt="" />
+															</span>Django</a>
+														</li>
+														<li class="nav-item me-0">
+															<a class="nav-link" data-bs-toggle="tab" href="#kt_app_framework_flask">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/flask.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/flask.png" alt="" />
+															</span>Flask</a>
+														</li>
+														<li class="nav-item me-0">
+															<a class="nav-link" data-bs-toggle="tab" href="#kt_app_framework_blazor">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/blazor.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/blazor.png" alt="" />
+															</span>Blazor</a>
+														</li>
+														<li class="nav-item me-0">
+															<a class="nav-link" data-bs-toggle="tab" href="#kt_app_framework_rails">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/rails.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/rails.png" alt="" />
+															</span>Rails</a>
+														</li>
+														<li class="nav-item me-0">
+															<a class="nav-link" data-bs-toggle="tab" href="#kt_app_framework_spring">
+															<span class="nav-link-logo">
+																<img class="nav-link-logo-img-active" src="assets/media/framework-logos/spring.png" alt="" />
+																<img class="nav-link-logo-img-default" src="assets/media/framework-logos/inactive/spring.png" alt="" />
+															</span>Spring</a>
+														</li>
+													</ul>
+												</div>
+												<!--end::Sticky aside-->
+											</div>
+											<!--end::Sidebar-->
+											<!--begin::Content-->
+											<div class="flex-lg-row-fluid ms-lg-7 ms-xl-12">
+												<!--begin::Demos toggle-->
+												<button class="btn btn-flex btn-light btn-active-color-primary btn-sm fw-bold d-lg-none ms-n2 me-2 mb-5" id="kt_app_frameworks_sidebar_toggle">
+												<!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
+												<span class="svg-icon svg-icon-2 me-2 ms-n2">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect x="2" y="2" width="9" height="9" rx="2" fill="currentColor" />
+														<rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2" fill="currentColor" />
+														<rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2" fill="currentColor" />
+														<rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2" fill="currentColor" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->Frameworks</button>
+												<!--end::Demos toggle-->
+												<!--begin::Tab content-->
+												<div class="tab-content">
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade active show" id="kt_app_framework_html" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">HTML Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/npm.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">NPM - Package Management</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Node Package Manager for quick and secure package management through command line tools</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/gulp.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Gulp - Task Automationn</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Automate & enhance your repetitive workflows and compose them into efficient build pipelines</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/webpack.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Webpack - Module Bundler</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Static assets bundler for easy integration with popular server side frameworks</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/html5.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">HTML5 - As Cornerstone</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">No design skills required, use the prepackaged solutions to code without ever leaving your HTML editor</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/css3.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">CSS3 - Design System</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Flexible CSS utility classes build on top of Bootstrap 5 will cover almost all your design needs</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/sass.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Sass - CSS With Superpowers</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Handle CSS with Sass, the most mature, stable, and powerful professional grade CSS extension language</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/datatables.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Datatables - Dynamic HTML Tables</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Highly flexible Javascript plugin that adds advanced features to any HTML table</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/fullcalendar.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Fullcalendar - JavaScript Event Calendar</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Powerful plugins that offers compelling event handling features with calendar and timeline views support</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_vue" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">Vue Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/framework-logos/vue.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Vue 3 - Progressive JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Custom tailored Vue 3 solution with the most popular VueJS libraries 
+																	<br />to provide solid a foundation for your next Vue apps</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/typescript.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">TypeScript - JavaScript With Syntax For Types</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/vue-i18n.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Vue I18n - Internationalization</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">For internationalization solution we use Vue I18n. It easily integrates 
+																	<br />some localization features to your Vue.js Application</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/vue-router.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Vue Router - Routing Solution</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Advanced single page rotuing with nested route and view 
+																	<br />mapping, modular, component-based router solution</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Vuelidate - Seamless Validation</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Highly flexible form validation is powered by Vuelidate, a lightweight 
+																	<br />model-based validation solution for Vue</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/element-plus.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Element Plus - Powerful UI Library</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Vue 3 based component library for designers and developers that 
+																	<br />provides efficient, consistent and feedback driven UI solutions</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_react" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">React Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/framework-logos/react.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">React - Building User Interfaces</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Custom tailored React 18 solution with popular React libraries
+																	<br />to provide solid a foundation for React projects</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/typescript.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">TypeScript - JavaScript With Syntax For Types</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/react-bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">React Bootstrap - Rebuilt for React</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">True React components for Bootstrap without unneeded 
+																	<br />dependencies and excellent choice for your UI foundation</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/react-redux.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Redux - State Container</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">State Container for predictable, debuggable and flexible state 
+																	<br />management for React apps and components</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/react-create-react-app.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">CRA - Create React App</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Use an integrated toolchain for the best user and developer 
+																	<br />experience by Create React App</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/react-router.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">React Router - Route Anywhere</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Collection of navigational components that
+																	<br />compose declaratively with your React application routing</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/react-redux-saga.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Redux Saga - Side Effect Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Intuitive Redux side effect manager that is easy to manage, 
+																	<br />easy to test, and executes efficiently</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_angular" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">Angular Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/framework-logos/angular.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Angular - Web Developer's Platform</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Solid Angular 14 solution for building applicaiton 
+																	<br />UIs fast and easy for projects of any size.</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/typescript.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">TypeScript - JavaScript With Syntax For Types</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/angular-i18n.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Angular i18n - Internationalization</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">We use Angular's built-in internationalization module 
+																	<br />to provide seamless localization and translation for your Angular apps</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/angular-forms.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Angular Forms - Cornerstone Of Apps</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Angular's built-in form module for handling user input 
+																	<br />with forms is the cornerstone of many common applications</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/angular-material.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Angular Material - Material Design Components</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fully integrated high quality & versatile Material Design
+																	<br />component for Angular apps</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/angular-router.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Angular Router - Common Routing Tasks</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">We use Angular's built-in router module to handle 
+																	<br />the navigation from one view to the next</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/angular-rxjs.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">RxJS - Reactive Extensions</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">RxJS is a library for reactive programming using Observables, to make
+																	<br />it easier to compose asynchronous or callback-based code</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_laravel" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">Laravel Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/framework-logos/laravel.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Laravel - Starter Kit</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Laravel 9 based starter kit app with a solid foundation for your 
+																	<br />next Laravel project that fully utilizes the theme HTML and assets</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/npm.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">NPM - Package Management</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Node Package Manager for quick and secure package management through command line tools</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/gulp.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Gulp - Task Automationn</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Automate & enhance your repetitive workflows and compose them into efficient build pipelines</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/webpack.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Webpack Mix - Module Bundler</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Static assets bundler for easy integration with popular server side frameworks</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/metronic.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Metronic - Full Source Code</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Use any Metronic feature in your pages by just copy-pasting required HTML and assets(CSS, JS) using the Theme API</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/theme-api.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Theme API - Assets & HTML Helpers</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Helper functions to manage the page's HTML construction and assets(CSS, JS) includes</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/laravel-blade.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Blade - Views & Templates</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Blade is the simple, yet powerful templating engine 
+																	<br />that is included with Laravel</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_aspnet-core" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">ASP.NET Core Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/framework-logos/asp.net-core.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Asp.Net Core 6 - Starter Kit</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Asp.Net Core 6 based starter kit app with a solid foundation for your 
+																	<br />next project that fully utilizes the theme HTML and assets</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/npm.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">NPM - Package Management</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Node Package Manager for quick and secure package management through command line tools</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/gulp.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Gulp - Task Automationn</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Automate & enhance your repetitive workflows and compose them into efficient build pipelines</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/webpack.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Webpack - Module Bundler</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Static assets bundler for easy integration with popular server side frameworks</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/metronic.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Metronic - Full Source Code</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Use any Metronic feature in your pages by just copy-pasting required HTML and assets(CSS, JS) using the Theme API</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/theme-api.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Theme API - Assets & HTML Helpers</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Helper functions to manage the page's HTML construction and assets(CSS, JS) includes</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_django" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">Django Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/framework-logos/django.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Django - Starter Kit</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Django 4 based starter kit app with a solid foundation for your 
+																	<br />next project that fully utilizes the theme HTML and assets</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/npm.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">NPM - Package Management</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Node Package Manager for quick and secure package management through command line tools</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/gulp.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Gulp - Task Automationn</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Automate & enhance your repetitive workflows and compose them into efficient build pipelines</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/webpack.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Webpack - Module Bundler</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Static assets bundler for easy integration with popular server side frameworks</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/metronic.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Metronic - Full Source Code</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Use any Metronic feature in your pages by just copy-pasting required HTML and assets(CSS, JS) using the Theme API</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/theme-api.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Theme API - Assets & HTML Helpers</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Helper functions to manage the page's HTML construction and assets(CSS, JS) includes</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_flask" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">Flask Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/framework-logos/flask.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Flask - Starter Kit</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Flask 2 based starter kit app with a solid foundation for your 
+																	<br />next project that fully utilizes the theme HTML and assets</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/npm.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">NPM - Package Management</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Node Package Manager for quick and secure package management through command line tools</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/gulp.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Gulp - Task Automationn</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Automate & enhance your repetitive workflows and compose them into efficient build pipelines</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/webpack.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Webpack - Module Bundler</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Static assets bundler for easy integration with popular server side frameworks</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/metronic.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Metronic - Full Source Code</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Use any Metronic feature in your pages by just copy-pasting required HTML and assets(CSS, JS) using the Theme API</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/theme-api.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Theme API - Assets & HTML Helpers</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Helper functions to manage the page's HTML construction and assets(CSS, JS) includes</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_blazor" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">Blazor Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/framework-logos/blazor.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Blazor - Starter Kit</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Blazor Server based starter kit app with a solid foundation for your 
+																	<br />next project that fully utilizes the theme HTML and assets</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/npm.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">NPM - Package Management</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Node Package Manager for quick and secure package management through command line tools</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/gulp.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Gulp - Task Automationn</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Automate & enhance your repetitive workflows and compose them into efficient build pipelines</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/webpack.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Webpack - Module Bundler</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Static assets bundler for easy integration with popular server side frameworks</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/metronic.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Metronic - Full Source Code</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Use any Metronic feature in your pages by just copy-pasting required HTML and assets(CSS, JS) using the Theme API</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/theme-api.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Theme API - Assets & HTML Helpers</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Helper functions to manage the page's HTML construction and assets(CSS, JS) includes</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_rails" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">Rails Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/framework-logos/rails.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Rails - Starter Kit</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Ruby & Rails 7 based starter kit app with a solid foundation for your 
+																	<br />next project that fully utilizes the theme HTML and assets</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/npm.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">NPM - Package Management</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Node Package Manager for quick and secure package management through command line tools</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/gulp.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Gulp - Task Automationn</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Automate & enhance your repetitive workflows and compose them into efficient build pipelines</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/webpack.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Webpack - Module Bundler</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Static assets bundler for easy integration with popular server side frameworks</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/metronic.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Metronic - Full Source Code</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Use any Metronic feature in your pages by just copy-pasting required HTML and assets(CSS, JS) using the Theme API</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/theme-api.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Theme API - Assets & HTML Helpers</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Helper functions to manage the page's HTML construction and assets(CSS, JS) includes</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_spring" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing">Spring Version</h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/framework-logos/spring.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Spring - Starter Kit</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Spring 2.7 based starter kit app with a solid foundation for your 
+																	<br />next project that fully utilizes the theme HTML and assets</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 - CSS & JS Framework</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Bootstrap 5 is used as a backbone by extending it further according to a unique design system</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/npm.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">NPM - Package Management</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Node Package Manager for quick and secure package management through command line tools</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/yarn.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Yarn - Dependency Manager</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Fast, safe & stable dependency manager with multithreading and version locking</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/gulp.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Gulp - Task Automationn</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Automate & enhance your repetitive workflows and compose them into efficient build pipelines</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/webpack.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Webpack - Module Bundler</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Static assets bundler for easy integration with popular server side frameworks</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/metronic.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Metronic - Full Source Code</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Use any Metronic feature in your pages by just copy-pasting required HTML and assets(CSS, JS) using the Theme API</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/theme-api.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Theme API - Assets & HTML Helpers</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold">Helper functions to manage the page's HTML construction and assets(CSS, JS) includes</div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_express" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing"></h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_symfony" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing"></h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+														<br />
+														<b>Warning</b>: Undefined array key "features" in 
+														<b>/var/www/preview.keenthemes.com/kt-products/metronic/releases/launcher/themes/metronic/html/demo0/dist/view/layout/partials/blocks/_frameworks.php</b>on line 
+														<b>113</b>
+														<br />
+														<br />
+														<b>Warning</b>: foreach() argument must be of type array|object, null given in 
+														<b>/var/www/preview.keenthemes.com/kt-products/metronic/releases/launcher/themes/metronic/html/demo0/dist/view/layout/partials/blocks/_frameworks.php</b>on line 
+														<b>113</b>
+														<br /></div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_codeigniter" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing"></h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_yii" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing"></h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+													<!--begin::Tab pane-->
+													<div class="tab-pane fade" id="kt_app_framework_play" role="tabpanel">
+														<!--begin::Heading-->
+														<div class="d-flex flex-column mb-10">
+															<h2 class="text-gray-900 fw-bold mb-1 fs-2 letter-spacing"></h2>
+															<span class="text-gray-600 fw-semibold fs-6"></span>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Row-->
+														<div class="row g-10">
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/bootstrap.png" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-md-6">
+																<!--begin::Info-->
+																<div class="d-flex flex-column mb-3">
+																	<!--begin::Heading-->
+																	<h3 class="d-flex d-flex flex-column justify-content-start mb-4">
+																		<!--begin::Logo-->
+																		<div class="d-flex flex-center flex-shrink-0 me-3 mb-5 bg-gray-200 rounded-1" style="height: 42px; width: 42px;">
+																			<img class="w-25px align-start" src="assets/media/features-logos/index.html" alt="" />
+																		</div>
+																		<!--end::Logo-->
+																		<!--begin::Title-->
+																		<div class="text-gray-800 fs-4 fw-bold letter-spacing">Bootstrap 5 HTML Version</div>
+																		<!--end::Title-->
+																	</h3>
+																	<!--end::Heading-->
+																	<!--begin::Description-->
+																	<div class="text-gray-700 fs-6 fw-semibold"></div>
+																	<!--end::Description-->
+																</div>
+																<!--end::Info-->
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Tab pane-->
+												</div>
+												<!--end::Tab content-->
+											</div>
+											<!--end::Content-->
+										</div>
+										<!--end::Frameworks content-->
+									</div>
+									<!--end::Frameworks-->
+								</div>
+								<!--end::Content container-->
+							</div>
+							<!--end::Content-->
+						</div>
+						<!--end::Content wrapper-->
+						<!--begin::Footer-->
+						<div id="kt_app_footer" class="app-footer d-block pt-lg-5">
+							<!--begin::Testimonails-->
+							<div class="testimonails" id="kt_app_testimonails">
+								<!--begin::Testimonails container-->
+								<div class="app-container container-xxl" data-theme="light">
+									<!--begin::Testimonails wrapper-->
+									<div class="testimonails-wrapper" id="kt_app_testimonails">
+										<!--begin::Slider container -->
+										<div class="tns tns-flush" style="direction: ltr">
+											<!--begin::Slider wrapper -->
+											<div data-tns="true" data-tns-autoplay="true" data-tns-nav-position="bottom" data-tns-speed="1000" data-tns-autoplay-timeout="18000" data-tns-controls="false">
+												<!--begin::Item-->
+												<div class="h-lg-575px">
+													<div class="tns-wrapper d-flex flex-column flex-lg-row align-items-center h-100 overflow-hidden rounded-4">
+														<div class="h-500px h-lg-100 flex-shrink-0 w-100 w-lg-500px bgi-no-repeat bgi-size-cover bgi-position-center" style="background-image:url('assets/media/testimonails/retailgear/team.jpg')"></div>
+														<div class="flex-grow-1 d-flex flex-column align-items-start justify-content-center h-100 p-10 p-lg-18">
+															<div class="testimonails-text fw-semibold fs-4">“The impact of the Metronic 8 theme on our frontend development is overwhelming. We were skeptical at first, because we had to REWRITE the frontend due to another theme. But working with a component based approach did not deliver us a good design as well. After weeks of comparing, we opted for the Metronic theme. The main points we considered were overall design, performance, Bootstrap, Angular, React and Vue.js support. 
+															<div class="mb-7"></div>Last but not least, you need great performance for customer satisfaction. That is why we try to load as few libraries as possible. Therefore, just depend on the Metronic 8 theme and use pure javascript to avoid using JQuery. The community and support is great, so try it yourself!“</div>
+															<div class="separator separator-hero my-8 w-100"></div>
+															<div class="d-flex flex-column mb-0">
+																<div class="mb-1">
+																	<img class="mh-40px" src="assets/media/testimonails/retailgear/logo.png" alt="" />
+																</div>
+																<a href="https://www.retailgear.com/" class="text-gray-700 text-hover-primary fs-6 fw-semibold" target="_blank">https://www.retailgear.com</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--end::Item-->
+											</div>
+											<!--end::Slider wrapper-->
+										</div>
+										<!--end::Slider container-->
+									</div>
+									<!--end::Testimonails wrapper-->
+								</div>
+								<!--end::Testimonails container-->
+							</div>
+							<!--end::Testimonails-->
+							<!--begin::Footer top-->
+							<div class="bg-gray-100 py-15 py-lg-20">
+								<!--begin::Space-->
+								<div class="h-auto h-lg-100px"></div>
+								<!--end::Space-->
+								<!--begin::Container-->
+								<div class="app-container container-xxl">
+									<!--begin::Row-->
+									<div class="row">
+										<!--begin::Col-->
+										<div class="col-lg-7 pe-lg-10 mb-10 mb-lg-0">
+											<!--begin::Row-->
+											<div class="row">
+												<!--begin::Col-->
+												<div class="col-md-6 mb-10 mb-md-0">
+													<!--begin::Block-->
+													<div class="rounded border border-gray-300 border-dashed p-10 me-lg-10">
+														<!--begin::Heading-->
+														<div class="mb-5 text-start">
+															<div class="fs-5 fw-semibold text-gray-800 mb-0">Would you need</div>
+															<div class="fs-2 fw-bold text-gray-800">a Custom License ?</div>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Text-->
+														<div class="fs-6 fw-semibold text-gray-700 mb-6 lh-lg">Get a free quote for a custom license that allows using Metronic in your project with an unlimited number of distributions.</div>
+														<!--end::Text-->
+														<!--begin::Link-->
+														<div class="text-start">
+															<a href="https://devs.keenthemes.com/" target="_blank" class="btn btn-success py-3 fs-6">Contact Us</a>
+														</div>
+														<!--end::Link-->
+													</div>
+													<!--end::Block-->
+												</div>
+												<!--end::Col-->
+												<!--begin::Col-->
+												<div class="col-md-6">
+													<!--begin::Block-->
+													<div class="rounded border border-gray-300 border-dashed p-10">
+														<!--begin::Heading-->
+														<div class="mb-5 text-start">
+															<div class="fs-5 fw-semibold text-gray-800 mb-0">How about</div>
+															<div class="fs-2 fw-bold text-gray-800">a Custom Project ?</div>
+														</div>
+														<!--end::Heading-->
+														<!--begin::Text-->
+														<div class="fs-6 fw-semibold text-gray-700 lh-lg mb-6">Since 2012, we have helped startups, blue chip companies and government agencies and successfully delivered over 120 custom projects.</div>
+														<!--end::Text-->
+														<!--begin::Link-->
+														<div class="text-start">
+															<a href="https://keenthemes.com/hireus" target="_blank" class="btn btn-primary py-3 fs-6">Hire Experts</a>
+														</div>
+														<!--end::Link-->
+													</div>
+													<!--end::Block-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Row-->
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-lg-5 ps-lg-10">
+											<!--begin::Row-->
+											<div class="row">
+												<!--begin::Col-->
+												<div class="col-6">
+													<h3 class="mb-3 fs-4 text-gray-800 letter-spacing-sm">More for Metronic</h3>
+													<!--begin::Nav-->
+													<div class="d-flex flex-column">
+														<a href="https://devs.keenthemes.com/" target="_blank" class="fs-5 fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">Support</a>
+														<a href="docs.html" class="fs-5 fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">All Docs</a>
+														<a href="changelog.html" class="fs-5 fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">Changelog</a>
+														<a href="https://devs.keenthemes.com/metronic" target="_blank" class="fs-5 fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">Downloads</a>
+														<a href="https://keenthemes.com/tutorials/categories/metronic-admin" target="_blank" class="fs-5 fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">Tutorials</a>
+														<a href="github.html" class="fs-5 fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">Github Access</a>
+													</div>
+													<!--end::Nav-->
+												</div>
+												<!--end::Col-->
+												<!--begin::Col-->
+												<div class="col-6">
+													<h3 class="mb-3 fs-4 text-gray-800 letter-spacing-sm">Stay Connected</h3>
+													<!--begin::Nav-->
+													<div class="d-flex flex-column">
+														<a href="https://www.youtube.com/c/KeenThemesTuts/videos" target="_blank" class="fs-5 d-flex align-items-center fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">
+														<img src="assets/media/svg/social-logos/youtube.svg" class="w-20px me-2" alt="" />Youtube</a>
+														<a href="https://github.com/KeenthemesHub" target="_blank" class="fs-5 d-flex align-items-center fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">
+														<img src="assets/media/svg/social-logos/github.svg" class="w-20px me-2" alt="" />Github</a>
+														<a href="https://twitter.com/keenthemes" target="_blank" class="fs-5 d-flex align-items-center fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">
+														<img src="assets/media/svg/social-logos/twitter.svg" class="w-20px me-2" alt="" />Twitter</a>
+														<a href="https://www.instagram.com/keenthemes" target="_blank" class="fs-5 d-flex align-items-center fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">
+														<img src="assets/media/svg/social-logos/instagram.svg" class="w-20px me-2" alt="" />Instagram</a>
+														<a href="https://www.linkedin.com/company/keenthemes" target="_blank" class="fs-5 d-flex align-items-center fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">
+														<img src="assets/media/svg/social-logos/linkedin.svg" class="w-20px me-2" alt="" />Linkedin</a>
+														<a href="https://dribbble.com/keenthemes" target="_blank" class="fs-5 d-flex align-items-center fw-semibold letter-spacing-sm text-gray-700 text-hover-primary py-2 py-lg-3">
+														<img src="assets/media/svg/social-logos/dribbble.svg" class="w-20px me-2" alt="" />Dribbble</a>
+													</div>
+													<!--end::Nav-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Row-->
+										</div>
+										<!--end::Col-->
+									</div>
+									<!--end::Row-->
+								</div>
+								<!--end::Container-->
+							</div>
+							<!--end:: Footer top-->
+							<!--begin:: Footer bottom-->
+							<div class="bg-body">
+								<div class="app-container container-xxl d-flex align-items-center flex-column flex-md-row flex-md-stack gap-2 py-6 py-lg-8">
+									<!--begin::Copyright-->
+									<div class="d-flex align-items-center order-2 order-lg-1">
+										<a href="https://keenthemes.com/" target="_blank">
+											<img class="h-25px" src="assets/media/logos/keenthemes.svg" alt="" />
+										</a>
+									</div>
+									<!--end::Copyright-->
+									<!--begin::Nav-->
+									<div class="d-flex align-items-center fs-5 fw-semibold letter-spacing order-1 order-lg-2">
+										<a href="https://keenthemes.com/" target="_blank" class="text-gray-700 text-hover-primary px-4">KeenThemes</a>
+										<a href="https://keenthemes.com/contact" target="_blank" class="text-gray-700 text-hover-primary px-4">Contact Us</a>
+										<a href="https://keenthemes.com/hireus" target="_blank" class="text-gray-700 text-hover-primary px-4">Hire Experts</a>
+									</div>
+									<!--end::Nav-->
+								</div>
+							</div>
+							<!--end:: Footer bottom-->
+						</div>
+						<!--end::Footer-->
+					</div>
+					<!--end:::Main-->
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Page-->
+		</div>
+		<!--end::App-->
+		<!--begin::Engage drawers-->
+		<!--end::Engage drawers-->
+		<!--begin::Engage toolbar-->
+		<div class="engage-toolbar d-flex position-fixed px-5 fw-bold zindex-2 top-50 end-0 transform-90 mt-5 mt-lg-20 gap-2"></div>
+		<!--end::Engage toolbar-->
+		<!--begin::Scrolltop-->
+		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+			<!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
+			<span class="svg-icon">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="currentColor" />
+					<path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="currentColor" />
+				</svg>
+			</span>
+			<!--end::Svg Icon-->
+		</div>
+		<!--end::Scrolltop-->
+		<!--begin::Javascript-->
+		<script>var hostUrl = "assets/index.html";</script>
+		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+		<script src="assets/plugins/global/plugins.bundle.js"></script>
+		<script src="assets/js/scripts.bundle.js"></script>
+		<!--end::Global Javascript Bundle-->
+		<!--end::Javascript-->
+	</body>
+	<!--end::Body-->
+
+<!-- Mirrored from keenthemes.com/metronic/docs by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 09:52:09 GMT -->
+</html>
