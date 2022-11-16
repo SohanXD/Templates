@@ -1,2 +1,2 @@
-# Templates
+# Websites Templates
 Websites Templates
